@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 600px;
+    width: 1265px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/main.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    padding-left: 0%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-styles: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aqua;
+    text-decoration: none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.text-box h1{
+    font-size: 50px;
+    font-style: oblique;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aqua;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: maroon ;
+    transition: 1s;
+}
+.col{
+    text-align: right;
+}
+.card{
+    width: 10px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 100px 309px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 5px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s;
+    position:relative;
+    overflow: hidden;
+}
+.card3{
+    background-image: url(images/gone.jpg);
+}
+.card4{
+    background-image: url(images/go.jpeg);
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size:10px;
+}
+
