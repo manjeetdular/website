@@ -4,15 +4,15 @@
 }
 .header{
     min-height: 600px;
-    width: 1265px;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/main.jpg);
+    width: 1250px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/main.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 nav{
     display: flex;
-    padding: 2% 4%;
+    padding: 3% 4%;
     justify-content: space-between;
     align-items: center;
 }
@@ -25,7 +25,7 @@ nav img{
     text-align: right;
 }
 .nav-links ul li{
-    list-styles: none;
+    list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
@@ -33,7 +33,7 @@ nav img{
 .nav-links ul li a{
     color: aqua;
     text-decoration: none;
-    font-size:13px;
+    font-size:20px;
 }
 .nav-links ul li::after{
     content: '';
@@ -54,21 +54,23 @@ nav img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
 }
 .text-box h1{
-    font-size: 50px;
+    font-size: 35px;
     font-style: oblique;
+    color: lightskyblue;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
-    color: aqua;
+    font-size: 16px;
+    color:white;
+    font-style:cursive;
 }
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: rgb(182, 250, 193);
     border: 1px solid #fff;
     padding: 12px 30px;
     font-size: 13px;
@@ -101,9 +103,19 @@ nav img{
 }
 .card3{
     background-image: url(images/gone.jpg);
+    background-size: cover;
 }
 .card4{
     background-image: url(images/go.jpeg);
+    background-size: cover;
+}
+.card5{
+    background-image: url(images/went.jpg);
+    background-size: cover;
+}
+.card6{
+    background-image: url(images/come.jpg);
+    background-size: cover;
 }
 .card:hover{
     transform: translateY(-15px);
