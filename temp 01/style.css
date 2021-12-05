@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+.col-sm-3, slider{
+  background-color: crimson;
+  color: aliceblue;
+  position: fixed;
+  height: 100vh;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  margin-left: 175px;
+  margin-top: 100px;
+  border-radius: 15px;
+}
+
+.menu ol a{
+  text-decoration: none;
+  width: 100%;
+}
+.menu ol a li{
+  font-family:  Times, serif;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  margin-top: 40PX;
+}
+.menu ol a li:hover{
+  font-size: 37px;
+  background-color: rgb(247, 167, 230);
+  transition: .3s;
+  border-radius: 15px;
+}
+.menu ol button{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(245, 86, 86);
+  height: 50px;
+  width: 60%;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  margin: 50px 0 0 95px;
+}
+.menu ol button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.menu ol button:hover{
+  font-size: 27px;
+  height: 55px;
+  width: 62%;
+}
+.footer p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 230px;
+}
+/* .col-sm-9, main{
+  background-color: white;
+  color: black;
+  height: 100vh;
+} */
+.col-sm-12, slider{
+  /* border: solid black 2px;
+  border-radius: 10px; */
+  height: 30%;
+  font-size: 2.1rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+.maindiv{
+  width:950px;
+  height: 250px;
+  position: absolute;
+  left: 46%;
+  top: 50%;
+  background-image: url(3.jpg);
+  background-size: 100% 100%;
+  transform: translate(-50%,-50%);
+  box-shadow: 5px 5px 25px rgb(48, 40, 40);
+  animation: slider 5s infinite linear;
+  border-radius: 1%  2%;
+}
+@keyframes slider{
+  0%{
+    background-image: url(12.jpg);
+  }
+  35%{
+    background-image: url(15.jpg);
+  }
+  75%{
+    background-image: url(10.jpg);
+  }
+  100%{
+    background-image: url(4.jpg)
+  }
+  120%{
+    background-image: url(6.jpg)
+  }
+} 
